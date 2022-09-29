@@ -1,6 +1,7 @@
 import Container from "./styled/Container";
 import NavWrapper, { Logo, NavLinks } from "./styled/NavWrapper";
 import Section from "./styled/Section";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -12,9 +13,9 @@ const Nav = () => {
             <span>Lilies</span>
           </Logo>
           <NavLinks>
-            <a href="/">Home</a>
-            <a href="/">Login</a>
-            <a href="/">Sign Up</a>
+            <Link to="/">Home</Link>
+            <Link to="/login">Login</Link>
+            <Link to="/register">Sign Up</Link>
           </NavLinks>
         </NavWrapper>
       </Container>
